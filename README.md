@@ -2,7 +2,7 @@
 
 Portfolio optimisation using Particle Swarm optimisation with the objective of maximising Sharpe Ratio.
 
-This code finds the best portfolio of optimimum size and asset weighting of companies within the Dow Jones Industrial Index.
+This Python code finds the portfolio of optimimum size and asset weighting of companies within the Dow Jones Industrial Index.
 
 ![Test Image 1](Portfolio_optimisation_plot.png)
 
