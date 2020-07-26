@@ -12,6 +12,7 @@ company_list = ['MMM', 'AXP', 'AAPL', 'BA', 'CAT', 'CVX', 'CSCO', 'KO', 'DOW', '
 #Downloading 10 year daily stock data
 stocks = yf.download(company_list, start=datetime.datetime(2010, 1, 1),
                      end=datetime.datetime(2020, 1, 1))['Adj Close'].astype('float16')
+stocks.dropna(inplace=True,axis=1,how='all')
 
 #Finding 15 companies with the heighest sharpe ratio's
 stocks_list = (stocks / stocks.shift(1)) - 1
